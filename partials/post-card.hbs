@@ -42,18 +42,19 @@
         </a>
         <footer class="post-card-meta">
             <ul class="author-list">
-                {{#foreach authors}}
+            
+            {{#has tag="#highlight"}}
                 <li class="author-list-item">
                     <div class="author-name-tooltip">
-                        {{name}}
+                        Populair Artikel
                     </div>
-                    {{#if profile_image}}
-                    <a href="{{url}}" class="static-avatar"><img class="author-profile-image" src="{{profile_image}}" alt="{{name}}" /></a>
-                    {{else}}
-                    <a href="{{url}}" class="static-avatar author-profile-image">{{> "icons/avatar"}}</a>
-                    {{/if}}
+                    <div class="author-profile-image" style="background-color: #fff; color: #FF9800;" alt="Populair Artikel">
+                    <i class="material-icons">
+                    whatshot
+                    </i>
+                    </div>
                 </li>
-                {{/foreach}}
+            {{/has }}
             </ul>
             <span class="reading-time">{{date published_at timeago='true'}}</span>
         </footer>

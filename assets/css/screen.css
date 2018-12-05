@@ -37,6 +37,10 @@ production stylesheet in assets/built/screen.css
 
 */
 
+.material-icons {
+    font-size: 16px;
+}
+
 
 .badge {
   display: inline-block;
@@ -328,7 +332,13 @@ body {
     align-items: flex-start;
     overflow-y: hidden;
     height: 40px;
-    font-size: 1.2rem;
+    font-size: 1.2rem;    
+    background: transparent;
+    padding: 0px 10px;
+}
+
+.site-nav-outer {
+    background-color: #efefef;
 }
 
 .site-nav-left {
@@ -341,7 +351,6 @@ body {
     padding-bottom: 80px;
     letter-spacing: 0.4px;
     white-space: nowrap;
-
     -ms-overflow-scrolling: touch;
 }
 
@@ -378,7 +387,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .nav {
     display: flex;
     margin: 0 0 0 -12px;
-    padding: 0;
+    /*padding: 0;*/
     list-style: none;
 }
 
@@ -393,7 +402,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #fff;
+    color: #282828;
     font-weight: bold;
     font-size: 14px;
 }
@@ -401,6 +410,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .nav li a:hover {
     text-decoration: none;
     opacity: 1;
+    background: #2b80bf;
+    color: white;
 }
 
 .site-nav-right {
@@ -436,7 +447,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .social-link svg {
     height: 1.8rem;
-    fill: #fff;
+    fill: #2b80bf;
 }
 
 .social-link-fb svg {
@@ -448,7 +459,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .social-link-wb svg path {
-    stroke: #fff;
+    stroke: #2b80bf;
 }
 
 .social-link-rss svg {
@@ -458,8 +469,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .subscribe-button {
     display: block;
     padding: 4px 10px;
-    border: #fff 1px solid;
-    color: #fff;
+    border: #2b80bf 1px solid;
+    color: #2b80bf;
     font-size: 1.2rem;
     line-height: 1em;
     border-radius: 10px;
@@ -482,7 +493,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .rss-button svg {
     margin-bottom: 1px;
     height: 2.1rem;
-    fill: #fff;
+    fill: #2b80bf;
 }
 
 @media (max-width: 700px) {

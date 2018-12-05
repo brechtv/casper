@@ -1,12 +1,7 @@
-<nav class="site-nav">
+<div class="site-nav-outer outer">
+<nav class="site-nav inner">
     <div class="site-nav-left">
-        {{^is "home"}}
-            {{#if @blog.logo}}
-                <a class="site-nav-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
-            {{else}}
-                <a class="site-nav-logo" href="{{@blog.url}}">{{@blog.title}}</a>
-            {{/if}}
-        {{/is}}
+        <a class="site-nav-logo" style="color:#282828; text-decoration: underline;"  href="{{@blog.url}}">{{@blog.title}} <i class="material-icons" style="font-size: 16px !important;">chevron_right</i></a>
         {{#if @blog.navigation}}
             {{navigation}}
         {{/if}}
@@ -27,3 +22,4 @@
         {{/if}}
     </div>
 </nav>
+</div>
