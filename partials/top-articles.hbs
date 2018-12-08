@@ -1,0 +1,17 @@
+<article class="read-next-card" style="background-image: url(https://images.unsplash.com/photo-1536097111034-38f8a082a6cf?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ)">
+
+    <header class="read-next-card-header">
+        <small class="read-next-card-header-sitetitle">De Brugse Stem</small>
+        <h3 class="read-next-card-header-title">Meest Gelezen</h3>
+    </header>
+
+<div class="read-next-card-content">
+<ul>
+{{#get "posts" filter="featured:true" as |post|}}
+    {{#foreach post limit="5"}}
+        <li><a href="{{ url }}">{{@number}}. {{ title }}</a></li>
+    {{/foreach}}
+{{/get}}
+</ul>
+</div>
+</article>

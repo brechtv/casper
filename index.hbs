@@ -25,7 +25,12 @@ into the {body} of the default.hbs template --}}
         <div class="post-feed">
             {{#foreach posts}}
 
+
                 {{#has number="4"}}
+                   {{> "top-articles"}}
+                {{/has}}
+
+                {{#has number="7"}}
                    {{> "have-news"}}
                 {{/has}}
 
