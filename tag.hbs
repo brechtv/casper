@@ -3,6 +3,7 @@
 
 {{!-- The big featured header, it uses blog cover image as a BG if available --}}
 {{#tag}}
+<a class="header-linky" href="/">
 <header class="site-header outer {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}">
     <div class="inner">
         <div class="site-header-content">
@@ -17,6 +18,7 @@
         </div>
     </div>
 </header>
+</a>
 {{> "site-nav"}}
 {{/tag}}
 

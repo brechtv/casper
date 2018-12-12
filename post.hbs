@@ -2,7 +2,7 @@
 
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
-
+<a class="header-linky" href="/">
 <header class="site-header outer {{#if @blog.cover_image}}" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
     <div class="inner">
         <div class="site-header-content">
@@ -17,6 +17,7 @@ into the {body} of the default.hbs template --}}
         </div>
     </div>
 </header>
+</a>
 {{> "site-nav"}}
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
@@ -50,9 +51,9 @@ into the {body} of the default.hbs template --}}
             {{!-- Email subscribe form at the bottom of the page --}}
             {{#if @labs.subscribers}}
             <section class="subscribe-form">
-                <h3 class="subscribe-form-title">Subscribe to {{@blog.title}}</h3>
-                <p>Get the latest posts delivered right to your inbox</p>
-                {{subscribe_form placeholder="youremail@example.com"}}
+                <h3 class="subscribe-form-title">Volg {{@blog.title}}</h3>
+                <p>Krijg het laatste nieuws van {{@blog.title}} in je mailbox!</p>
+                {{subscribe_form placeholder="mijnemail@telenet.be"}}
             </section>
             {{/if}}
 

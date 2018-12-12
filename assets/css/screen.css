@@ -37,6 +37,15 @@ production stylesheet in assets/built/screen.css
 
 */
 
+a.header-linky {
+    color: #fff;
+}
+
+a.header-linky:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
 .material-icons {
     font-size: 16px;
 }
