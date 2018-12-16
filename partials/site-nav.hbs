@@ -1,13 +1,13 @@
 <div class="site-nav-outer outer">
 <nav class="site-nav inner">
     <div class="site-nav-left">
-        <a class="site-nav-logo" style="color:#282828; text-decoration: underline;"  href="{{@blog.url}}">{{@blog.title}} <i class="material-icons" style="font-size: 16px !important;">chevron_right</i></a>
         {{#if @blog.navigation}}
             {{navigation}}
         {{/if}}
     </div>
     <div class="site-nav-right">
         <div class="social-links">
+            <div style="color: #26a8ed;"><strong>Het weer</strong>: slecht.</div>
             {{#if @blog.facebook}}
                 <a class="social-link social-link-fb" href="{{facebook_url @blog.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
             {{/if}}

@@ -20,6 +20,7 @@ into the {body} of the default.hbs template --}}
 </header>
 </a>
 {{> "site-nav"}}
+
 {{!-- The main content area --}}
 <main id="site-main" class="site-main outer">
     <div class="inner">
@@ -32,7 +33,11 @@ into the {body} of the default.hbs template --}}
                    {{> "top-articles"}}
                 {{/has}}
 
-                {{#has number="7"}}
+                {{#has number="4"}}
+                   {{> "callout"}}
+                {{/has}}
+
+                {{#has number="10"}}
                    {{> "have-news"}}
                 {{/has}}
 

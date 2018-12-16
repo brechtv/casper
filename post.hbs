@@ -47,37 +47,20 @@ into the {body} of the default.hbs template --}}
                     {{content}}
                 </div>
             </section>
+            <section style="text-align: center;">
+                <script type="text/javascript">
+                  ( function() {
+                    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+                    var unit = {"calltype":"async[2]","publisher":"debrugsestem","width":300,"height":250,"sid":"Chitika Default"};
+                    var placement_id = window.CHITIKA.units.length;
+                    window.CHITIKA.units.push(unit);
+                    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+                }());
+                </script>
+                <script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
 
-            {{!-- Email subscribe form at the bottom of the page --}}
-            {{#if @labs.subscribers}}
-            <section class="subscribe-form">
-                <h3 class="subscribe-form-title">Volg {{@blog.title}}</h3>
-                <p>Krijg het laatste nieuws van {{@blog.title}} in je mailbox!</p>
-                {{subscribe_form placeholder="mijnemail@telenet.be"}}
+
             </section>
-            {{/if}}
-
-            <footer class="post-full-footer">
-
-                {{!-- There are two options for how we display the byline/author-info.
-                If the post has more than one author, we load a specific template
-                from includes/byline-multiple.hbs, otherwise, we just use the
-                default byline. --}}
-
-                {{#has author="count:>1"}}
-                    {{> "byline-multiple"}}
-                {{else}}
-                    {{> "byline-single"}}
-                {{/has}}
-
-            </footer>
-
-            {{!--
-            <section class="post-full-comments">
-                If you want to embed comments, this is a good place to do it!
-            </section>
-            --}}
-
         </article>
 
     </div>

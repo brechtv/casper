@@ -37,6 +37,37 @@ production stylesheet in assets/built/screen.css
 
 */
 
+.marquee {
+  background-color: #282828;
+  color: #fff;
+  padding: 5px;
+  min-height: 20px;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  height: 30px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 10s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
 a.header-linky {
     color: #fff;
 }

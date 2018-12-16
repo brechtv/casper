@@ -1,25 +1,14 @@
-{{#has tag="#social"}}
-<article class="post-card {{post_class}}{{#unless feature_image}} no-image{{/unless}}" style="background-color: #fffff2;">
-
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="{{url}}">
-            <header class="post-card-header">
-                                {{#if primary_tag}}
-                <span class="post-card-tags">{{primary_tag.name}}</span>
-                {{/if}}
-                <h2 class="post-card-title">{{title}}</h2>
+{{#has tag="#ad"}}
+<article class="post-card">
+<header class="post-card-header">
+                <span class="post-card-tags" style="padding: 10px;">Advertentie</span>
             </header>
-        </a>
-        <span class="post-card-image-link">
-            {{content}}
+    <div class="post-card-content" style="display: flex; flex-direction: column; justify-content: center;">
+        <span>
+            {{ content }}
         </span>
     </div>
-        <footer class="post-card-meta">
-            <span class="reading-time">#social</span>
-        </footer>
 </article>
-
-
 
 {{ else }}
 <article class="post-card {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
