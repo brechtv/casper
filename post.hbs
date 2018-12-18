@@ -55,6 +55,7 @@ into the {body} of the default.hbs template --}}
 {{!-- Links to Previous/Next posts --}}
 <aside class="read-next outer">
     <div class="inner">
+
         <div class="read-next-feed">
             {{#if primary_tag}}
             {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{id}}" limit="3" as |related_posts|}}
