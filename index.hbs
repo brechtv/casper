@@ -33,19 +33,13 @@ into the {body} of the default.hbs template --}}
                 {{/has}}
 
                 {{#has number="4"}}
-                   {{> "callout"}}
-                {{/has}}
-
-
-                {{#has number="4"}}
                    {{> "top-articles"}}
                 {{/has}}
 
-                {{#has number="10"}}
-                   {{> "have-news"}}
+                {{#has number="8"}}
+                   {{> "callout"}}
                 {{/has}}
 
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
                 {{> "post-card"}}
 
             {{/foreach}}
